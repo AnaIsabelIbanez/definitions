@@ -1,0 +1,49 @@
+{
+  "required": [
+    "jsonapi",
+    "error"
+  ],
+  "properties": {
+    "jsonapi": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string"
+        }
+      }
+    },
+    "error": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "integer",
+            "enum": [
+              200,
+              400,
+              401,
+              404,
+              408,
+              500
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "detail": {
+            "type": "string"
+          },
+          "links": {
+            "type": "object",
+            "properties": {
+              "self": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

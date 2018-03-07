@@ -1,0 +1,38 @@
+{
+  "summary": "Login summary",
+  "operationId": "login",
+  "tags": [
+    "login"
+  ],
+  "parameters": [
+    {
+      "in": "body",
+      "name": "body",
+      "description": "User autentication",
+      "required": true,
+      "schema": {
+        "$ref": "../definitions/user.json"
+      }
+    }
+  ],
+  "responses": {
+    "200": {
+      "description": "authentication ok",
+      "headers": {
+        "x-next": {
+          "type": "string",
+          "description": "A link to the next page of responses"
+        }
+      },
+      "schema": {
+        "$ref": "../definitions/user.json"
+      }
+    },
+    "default": {
+      "description": "unexpected error",
+      "schema": {
+        "$ref": "../definitions/error.json"
+      }
+    }
+  }
+}

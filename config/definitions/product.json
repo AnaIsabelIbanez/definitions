@@ -1,0 +1,96 @@
+{
+    "required": [
+      "business_unit",
+      "source",
+      "external_id",
+      "sku",
+      "ean",
+      "ref_com​",
+      "ref_logistic​",
+      "ref_physical",
+      "short_description",
+      "web_description",
+      "brand",
+      "category",
+      "family",
+      "prod_template",
+      "size",
+      "color",
+      "campaign_id",
+      "campaign_name",
+      "supplier_name",
+      "expiration_date",
+      "photos"
+    ],
+    "properties": {
+      "business_unit": {
+        "type": "string"
+      },
+      "source": {
+        "type": "string"
+      },
+      "external_id": {
+        "type": "integer",
+        "format": "int64"
+      },
+      "sku": {
+        "type": "string"
+      },
+      "ean": {
+        "type": "string"
+      },
+      "ref_com​": {
+        "type": "string"
+      },
+      "ref_logistic​": {
+        "type": "string"
+      },
+      "ref_physical": {
+        "type": "string"
+      },
+      "short_description": {
+        "type": "string"
+      },
+      "web_description": {
+        "type": "string"
+      },
+      "brand": {
+        "type": "string"
+      },
+      "category": {
+        "type": "string"
+      },
+      "family": {
+        "type": "string"
+      },
+      "prod_template": {
+        "type": "string"
+      },
+      "size": {
+        "type": "string"
+      },
+      "color": {
+        "type": "string"
+      },
+      "campaign_id": {
+        "type": "integer",
+        "format": "int64"
+      },
+      "campaign_name": {
+        "type": "string"
+      },
+      "supplier_name": {
+        "type": "string"
+      },
+      "expiration_date": {
+        "format": "date-time"
+      },
+      "photos": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    }
+}

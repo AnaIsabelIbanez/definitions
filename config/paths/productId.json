@@ -1,0 +1,30 @@
+{
+  "summary": "Info for an specific product",
+  "operationId": "getProductById",
+  "tags": [
+    "ProductById"
+  ],
+  "parameters": [
+    {
+      "name": "id",
+      "in": "path",
+      "required": true,
+      "description": "The id of the product to retrieve",
+      "type": "string"
+    }
+  ],
+  "responses": {
+    "200": {
+      "description": "Expected response to a valid request",
+      "schema": {
+        "$ref": "../definitions/products.json"
+      }
+    },
+    "default": {
+      "description": "unexpected error",
+      "schema": {
+        "$ref": "../definitions/error.json"
+      }
+    }
+  }
+}

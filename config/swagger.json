@@ -1,0 +1,38 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Swagger Productstore",
+        "license": {
+            "name": "MIT"
+        }
+    },
+    "host": "petstore.swagger.io",
+    "basePath": "/api",
+    "schemes": [
+        "http"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/login": {
+            "post": {
+                "$ref": "./paths/login.json"
+            }
+        },
+        "/product": {
+            "get": {
+                "$ref": "./paths/product.json"
+            }
+        },
+        "/product/{id}": {
+            "get": {
+                "$ref": "./paths/productId.json"
+            }
+        }
+    }
+}
