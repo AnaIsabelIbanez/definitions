@@ -53,14 +53,35 @@
             "type": "string",
             "format": "uri",
             "enum": [
-              "/product?page[offset]=0"
+              "/product?page[offset]=20"
             ]
           },
           "next": {
             "type": "string",
             "format": "uri",
             "enum": [
-              "/product?page[offset]=20"
+              "/product?page[offset]=40"
+            ]
+          },
+          "prev": {
+            "type": "string",
+            "format": "uri",
+            "enum": [
+              "/product?page[offset]=0"
+            ]
+          },
+          "first": {
+            "type": "string",
+            "format": "uri",
+            "enum": [
+              "/product?page[offset]=0"
+            ]
+          },
+          "last": {
+            "type": "string",
+            "format": "uri",
+            "enum": [
+              "/product?page[offset]=100"
             ]
           }
         }

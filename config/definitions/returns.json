@@ -1,0 +1,165 @@
+{
+  "required": [
+    "jsonapi"
+  ],
+  "properties": {
+    "jsonapi": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string"
+        }
+      }
+    },
+    "data": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "attributes": {
+            "$ref": "./return.json"
+          },
+          "links": {
+            "type": "object",
+            "properties": {
+              "self": {
+                "type": "string",
+                "format": "uri",
+                "enum": [
+                  "/return/1"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "self": {
+          "type": "string",
+          "format": "uri",
+          "enum": [
+            "/return?page[offset]=20"
+          ]
+        },
+        "next": {
+          "type": "string",
+          "format": "uri",
+          "enum": [
+            "/return?page[offset]=40"
+          ]
+        },
+        "prev": {
+          "type": "string",
+          "format": "uri",
+          "enum": [
+            "/return?page[offset]=0"
+          ]
+        },
+        "first": {
+          "type": "string",
+          "format": "uri",
+          "enum": [
+            "/return?page[offset]=0"
+          ]
+        },
+        "last": {
+          "type": "string",
+          "format": "uri",
+          "enum": [
+            "/return?page[offset]=100"
+          ]
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "total-pages": {
+          "type": "integer",
+          "format": "int32",
+          "enum": [
+            50,
+            100,
+            400,
+            525
+          ]
+        },
+        "current-page": {
+          "type": "integer",
+          "format": "int32",
+          "enum": [
+            1,
+            5,
+            10,
+            50,
+            100,
+            400,
+            525
+          ]
+        },
+        "page-size": {
+          "type": "integer",
+          "format": "int32",
+          "enum": [
+            20
+          ]
+        },
+        "total-results": {
+          "type": "integer",
+          "format": "int32",
+          "enum": [
+            1000,
+            1
+          ]
+        }
+      }
+    },
+    "relationships": {
+      "type": "object",
+      "properties": {
+        "lines": {
+          "type": "object",
+          "properties": {
+            "links": {
+              "type": "object",
+              "properties": {
+                "self": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              }
+            },
+            "data": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": ["line"]
+                  },
+                  "id": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

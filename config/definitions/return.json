@@ -1,0 +1,70 @@
+{
+  "required": [
+    "business_unit",
+    "source",
+    "return_id",
+    "order_id",
+    "campaign_id",
+    "campaign_name",
+    "warehouse_name",
+    "memeber_id",
+    "member_name",
+    "member_email",
+    "checking_date",
+    "warehouse_date",
+    "production_date",
+    "quality_date"
+  ],
+  "properties": {
+    "business_unit": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "return_id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "order_id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "campaign_id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "campaign_name": {
+      "type": "string"
+    },
+    "warehouse_name": {
+      "type": "string"
+    },
+    "memeber_id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "member_name": {
+      "type": "string"
+    },
+    "member_email": {
+      "type": "string"
+    },
+    "checking_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "warehouse_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "production_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "quality_date": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "summary": "Returns info for a specific filter",
+  "operationId": "getReturns",
+  "tags": [
+    "Returns"
+  ],
+  "parameters": [
+    {
+      "in": "query",
+      "name": "filter",
+      "description": "to filter by field, example: ?filter[brand]=nike&filter[size]=38,39,40",
+      "type": "string",
+      "required": false
+    },
+    {
+      "in": "query",
+      "name": "sort",
+      "description": "to sort by several fields, with minus to descending sort, example: sort=brand,-size",
+      "type": "string",
+      "required": false
+    },
+    {
+      "in": "query",
+      "name": "page",
+      "description": "the index of the first element to return",
+      "type": "string",
+      "required": false
+    },
+    {
+      "in": "query",
+      "name": "include",
+      "description": "relationed entities, example: ?include=return.line,return.line.photo",
+      "type": "string",
+      "required": false
+    }
+  ],
+  "responses": {
+    "200": {
+      "description": "Expected response to a valid request",
+      "schema": {
+        "$ref": "../definitions/returns.json"
+      }
+    },
+    "default": {
+      "description": "unexpected error",
+      "schema": {
+        "$ref": "../definitions/error.json"
+      }
+    }
+  }
+}

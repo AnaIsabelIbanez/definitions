@@ -33,6 +33,11 @@
             "get": {
                 "$ref": "./paths/productId.json"
             }
+        },
+        "/return": {
+            "get": {
+                "$ref": "./paths/return.json"
+            }
         }
     }
 }

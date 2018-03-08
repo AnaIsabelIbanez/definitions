@@ -83,6 +83,7 @@
         "type": "string"
       },
       "expiration_date": {
+        "type": "string",
         "format": "date-time"
       },
       "photos": {
