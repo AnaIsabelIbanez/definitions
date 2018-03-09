@@ -50,7 +50,7 @@
           "type": "string",
           "format": "uri",
           "enum": [
-            "/return?page[offset]=20"
+            "return?filter[campaign_name]=45&page[offset]=20"
           ]
         },
         "next": {
