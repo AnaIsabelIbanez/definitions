@@ -1,0 +1,59 @@
+{
+  "required": [
+    "id",
+    "return",
+    "sku",
+    "ref_com",
+    "EAN",
+    "sku_real_product",
+    "member_reason",
+    "member_observations",
+    "warehouse_reason",
+    "warehouse_subreason",
+    "production_subreason",
+    "quality_subreason",
+    "photos"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "return": {
+      "type": "string"
+    },
+    "sku": {
+      "type": "string"
+    },
+    "ref_com": {
+      "type": "string"
+    },
+    "EAN": {
+      "type": "string"
+    },
+    "sku_real_product": {
+      "type": "string"
+    },
+    "member_reason": {
+      "type": "integer"
+    },
+    "member_observations": {
+      "type": "string"
+    },
+    "warehouse_reason": {
+      "type": "integer"
+    },
+    "warehouse_subreason": {
+      "type": "integer"
+    },
+    "production_subreason": {
+      "type": "integer"
+    },
+    "quality_subreason": {
+      "type": "integer"
+    },
+    "photos": {
+      "type": "string"
+    }
+  }
+}

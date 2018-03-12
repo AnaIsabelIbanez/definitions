@@ -38,6 +38,11 @@
             "get": {
                 "$ref": "./paths/return.json"
             }
+        },
+        "/return/{id}/line": {
+            "get": {
+                "$ref": "./paths/line.json"
+            }
         }
     }
 }

@@ -1,0 +1,44 @@
+{
+  "summary": "Lines info for a specific return with pagination",
+  "operationId": "getLines",
+  "tags": [
+    "Lines"
+  ],
+  "parameters": [
+    {
+      "in": "path",
+      "name": "id",
+      "description": "id of the return",
+      "type": "string",
+      "required": true
+    },
+    {
+      "in": "query",
+      "name": "page",
+      "description": "the index of the first element to return",
+      "type": "string",
+      "required": false
+    },
+    {
+      "in": "query",
+      "name": "include",
+      "description": "relationed entities, example: ?include=return.line.photo",
+      "type": "string",
+      "required": false
+    }
+  ],
+  "responses": {
+    "200": {
+      "description": "Expected response to a valid request",
+      "schema": {
+        "$ref": "../definitions/lines.json"
+      }
+    },
+    "default": {
+      "description": "unexpected error",
+      "schema": {
+        "$ref": "../definitions/error.json"
+      }
+    }
+  }
+}
