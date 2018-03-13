@@ -43,6 +43,46 @@
             "get": {
                 "$ref": "./paths/line.json"
             }
+        },
+        "/brand": {
+            "get": {
+                "$ref": "./paths/keyValueList.json"
+            }
+        },
+        "/category": {
+            "get": {
+                "$ref": "./paths/keyValueList.json"
+            }
+        },
+        "/size": {
+            "get": {
+                "$ref": "./paths/keyValueList.json"
+            }
+        },
+        "/color": {
+            "get": {
+                "$ref": "./paths/keyValueList.json"
+            }
+        },
+        "/returns_type": {
+            "get": {
+                "$ref": "./paths/keyValueList.json"
+            }
+        },
+        "/reason_type": {
+            "get": {
+                "$ref": "./paths/keyValueList.json"
+            }
+        },
+        "/subreason_type": {
+            "get": {
+                "$ref": "./paths/keyValueList.json"
+            }
+        },
+        "/warehouse_name": {
+            "get": {
+                "$ref": "./paths/keyValueList.json"
+            }
         }
     }
 }

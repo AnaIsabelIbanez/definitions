@@ -1,0 +1,21 @@
+{
+  "summary": "standard response for key value lists",
+  "operationId": "getKeyValueList",
+  "tags": [
+    "keyValue"
+  ],
+  "responses": {
+    "200": {
+      "description": "response ok",
+      "schema": {
+        "$ref": "../definitions/keyValue.json"
+      }
+    },
+    "default": {
+      "description": "unexpected error",
+      "schema": {
+        "$ref": "../definitions/error.json"
+      }
+    }
+  }
+}
