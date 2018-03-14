@@ -1,0 +1,94 @@
+{
+  "summary": "Update part of a line",
+  "operationId": "updateLine",
+  "tags": [
+    "PatchLine"
+  ],
+  "parameters": [
+    {
+      "name": "id",
+      "in": "path",
+      "required": true,
+      "description": "The id of the line to update",
+      "type": "string"
+    },
+    {
+      "in": "body",
+      "name": "data",
+      "description": "line to update",
+      "required": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "id": {
+                "type": "integer"
+              },
+              "attributes": {
+                "type": "object",
+                "properties": {
+                  "return": {
+                    "type": "string"
+                  },
+                  "sku": {
+                    "type": "string"
+                  },
+                  "ref_com": {
+                    "type": "string"
+                  },
+                  "ean": {
+                    "type": "string"
+                  },
+                  "sku_real_product": {
+                    "type": "string"
+                  },
+                  "member_reason": {
+                    "type": "integer"
+                  },
+                  "member_observations": {
+                    "type": "string"
+                  },
+                  "warehouse_reason": {
+                    "type": "integer"
+                  },
+                  "warehouse_subreason": {
+                    "type": "integer",
+                    "enum": [1, 2, 3, 4]
+                  },
+                  "production_subreason": {
+                    "type": "integer"
+                  },
+                  "quality_subreason": {
+                    "type": "integer"
+                  },
+                  "photos": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "responses": {
+    "200": {
+      "description": "Expected response to a valid request",
+      "schema": {
+        "$ref": "../definitions/lineId.json"
+      }
+    },
+    "default": {
+      "description": "unexpected error",
+      "schema": {
+        "$ref": "../definitions/error.json"
+      }
+    }
+  }
+}

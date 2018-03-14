@@ -44,6 +44,11 @@
                 "$ref": "./paths/line.json"
             }
         },
+        "/return/line/{id}": {
+            "patch": {
+                "$ref": "./paths/lineId.json"
+            }
+        },
         "/brand": {
             "get": {
                 "$ref": "./paths/keyValueList.json"
@@ -64,17 +69,17 @@
                 "$ref": "./paths/keyValueList.json"
             }
         },
-        "/returns_type": {
+        "/return_type": {
             "get": {
                 "$ref": "./paths/keyValueList.json"
             }
         },
-        "/reason_type": {
+        "/return_reason": {
             "get": {
                 "$ref": "./paths/keyValueList.json"
             }
         },
-        "/subreason_type": {
+        "/return_subreason": {
             "get": {
                 "$ref": "./paths/keyValueList.json"
             }

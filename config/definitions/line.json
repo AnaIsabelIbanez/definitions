@@ -1,6 +1,6 @@
 {
+  "type": "object",
   "required": [
-    "id",
     "return",
     "sku",
     "ref_com",
@@ -15,10 +15,6 @@
     "photos"
   ],
   "properties": {
-    "id": {
-      "type": "string",
-      "format": "uuid"
-    },
     "return": {
       "type": "string"
     },
@@ -44,7 +40,8 @@
       "type": "integer"
     },
     "warehouse_subreason": {
-      "type": "integer"
+      "type": "integer",
+      "enum": [1, 2, 3, 4]
     },
     "production_subreason": {
       "type": "integer"
