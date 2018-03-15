@@ -39,6 +39,11 @@
                 "$ref": "./paths/return.json"
             }
         },
+        "/return/{id}": {
+            "get": {
+                "$ref": "./paths/returnId.json"
+            }
+        },
         "/return/{id}/line": {
             "get": {
                 "$ref": "./paths/line.json"

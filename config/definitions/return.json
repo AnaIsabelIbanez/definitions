@@ -10,10 +10,7 @@
     "memeber_id",
     "member_name",
     "member_email",
-    "checking_date",
-    "warehouse_date",
-    "production_date",
-    "quality_date"
+    "checking_date"
   ],
   "properties": {
     "business_unit": {

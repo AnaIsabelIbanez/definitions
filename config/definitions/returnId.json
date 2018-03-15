@@ -1,0 +1,31 @@
+{
+    "required": [
+        "links",
+        "data"
+    ],
+    "properties":{
+        "links": {
+            "type": "object",
+            "properties": {
+                "self": {
+                    "type": "string",
+                    "format": "uri"
+                }
+            }
+        } ,
+        "data": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "attributes": {
+                    "$ref": "./return.json"
+                }
+            }
+        }
+    }
+}

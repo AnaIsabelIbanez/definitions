@@ -1,0 +1,30 @@
+{
+    "summary": "Info for an specific return",
+    "operationId": "getReturnById",
+    "tags": [
+        "ReturnById"
+    ],
+    "parameters": [
+        {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "The id of the return to retrieve",
+            "type": "string"
+        }
+    ],
+    "responses": {
+        "200": {
+            "description": "Expected response to a valid request",
+            "schema": {
+                "$ref": "../definitions/returnId.json"
+            }
+        },
+        "default": {
+            "description": "unexpected error",
+            "schema": {
+                "$ref": "../definitions/error.json"
+            }
+        }
+    }
+}
