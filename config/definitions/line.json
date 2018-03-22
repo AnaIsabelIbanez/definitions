@@ -4,7 +4,7 @@
     "return",
     "sku",
     "ref_com",
-    "EAN",
+    "ean",
     "sku_real_product",
     "member_reason",
     "member_observations",
@@ -16,7 +16,7 @@
   ],
   "properties": {
     "return": {
-      "type": "string"
+        "$ref": "./return.json"
     },
     "sku": {
       "type": "string"
@@ -24,7 +24,7 @@
     "ref_com": {
       "type": "string"
     },
-    "EAN": {
+    "ean": {
       "type": "string"
     },
     "sku_real_product": {
