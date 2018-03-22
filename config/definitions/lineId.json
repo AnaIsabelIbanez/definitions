@@ -16,19 +16,14 @@
     "data": {
       "type": "object",
       "properties": {
-        "data": {
-          "type": "object",
-          "properties": {
-            "type": {
-              "type": "string"
-            },
-            "id": {
-              "type": "integer"
-            },
-            "attributes": {
-              "$ref": "./line.json"
-            }
-          }
+        "type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "attributes": {
+          "$ref": "./line.json"
         }
       }
     }

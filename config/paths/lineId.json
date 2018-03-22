@@ -16,7 +16,7 @@
       "in": "body",
       "name": "data",
       "description": "line to update",
-      "required": true,
+      "required": false,
       "schema": {
         "type": "object",
         "properties": {

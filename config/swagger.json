@@ -52,6 +52,9 @@
         "/return/line/{id}": {
             "patch": {
                 "$ref": "./paths/lineId.json"
+            },
+            "get": {
+                "$ref": "./paths/lineId.json"
             }
         },
         "/brand": {
