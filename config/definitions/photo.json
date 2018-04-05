@@ -1,0 +1,20 @@
+{
+  "required": [
+    "photo"
+  ],
+  "properties": {
+    "photo": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "location": {
+          "type": "string",
+          "format": "uri",
+          "enum": ["https://cdn.ferragamo.com/wcsstore/FerragamoCatalogAssetStore/images/products/684330/684330_00.png"]
+        }
+      }
+    }
+  }
+}

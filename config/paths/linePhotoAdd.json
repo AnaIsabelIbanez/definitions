@@ -1,0 +1,38 @@
+{
+  "summary": "add photo to a line",
+  "operationId": "addPhoto",
+  "tags": [
+    "PostLine"
+  ],
+  "consumes": [
+    "multipart/form-data"
+  ],
+  "parameters": [
+    {
+      "name": "id",
+      "in": "path",
+      "required": true,
+      "description": "The id of the line",
+      "type": "string"
+    }, {
+      "in": "formData",
+      "name": "file",
+      "type": "file",
+      "description": "The photo to upload."
+    }
+  ],
+  "responses": {
+    "200": {
+      "description": "Expected response to a valid request",
+      "schema": {
+        "$ref": "../definitions/photo.json"
+      }
+    },
+    "default": {
+      "description": "unexpected error",
+      "schema": {
+        "$ref": "../definitions/error.json"
+      }
+    }
+  }
+}

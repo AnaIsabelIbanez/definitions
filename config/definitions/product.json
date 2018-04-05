@@ -90,7 +90,8 @@
         "type": "array",
         "items": {
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "enum": ["https://cdn.ferragamo.com/wcsstore/FerragamoCatalogAssetStore/images/products/684330/684330_00.png"]
         }
       }
     }

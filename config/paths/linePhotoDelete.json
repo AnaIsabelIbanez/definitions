@@ -1,0 +1,30 @@
+{
+  "summary": "Delete photo to a line",
+  "operationId": "deletePhoto",
+  "tags": [
+    "DeleteLine"
+  ],
+  "parameters": [
+    {
+      "name": "id",
+      "in": "path",
+      "required": true,
+      "description": "The id of the line",
+      "type": "string"
+    }
+  ],
+  "responses": {
+    "200": {
+      "description": "Expected response to a valid request",
+      "schema": {
+        "$ref": "../definitions/photo.json"
+      }
+    },
+    "default": {
+      "description": "unexpected error",
+      "schema": {
+        "$ref": "../definitions/error.json"
+      }
+    }
+  }
+}

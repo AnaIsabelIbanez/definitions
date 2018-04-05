@@ -52,6 +52,19 @@
         "/return/line/{id}": {
             "patch": {
                 "$ref": "./paths/lineId.json"
+            },
+            "get": {
+                "$ref": "./paths/lineId.json"
+            }
+        },
+        "/return/line/{id}/photo": {
+            "post": {
+                "$ref": "./paths/linePhotoAdd.json"
+            }
+        },
+        "/return/line/photo/{id}": {
+            "delete": {
+                "$ref": "./paths/linePhotoDelete.json"
             }
         },
         "/brand": {

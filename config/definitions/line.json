@@ -1,6 +1,7 @@
 {
   "type": "object",
   "required": [
+    "id",
     "return",
     "sku",
     "ref_com",
@@ -15,6 +16,9 @@
     "photos"
   ],
   "properties": {
+    "id": {
+      "type": "integer"
+    },
     "return": {
         "$ref": "./return.json"
     },
@@ -50,7 +54,25 @@
       "type": "integer"
     },
     "photos": {
-      "type": "string"
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "uuid"
+          },
+          "location": {
+            "type": "string",
+            "format": "uri",
+            "enum": [
+              "https://react-bootstrap.github.io/thumbnail.png"
+            ]
+          }
+        }
+      }
     }
   }
 }
